@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|VT323&display=swap');
+/* Background color */
+body {
+    background-color: #F8F9FA;
+}
+.nav-style {
+    background-color: #6C757D
+}
+.navtop, .navbottom {
+    background-color: #343A40
+}
+/* Prevent image stretching*/
+img {
+    height: auto
+}
+
+/* Portrait styling */
+.portrait {
+    width: 100%;
+    height: auto;
+    min-width: 150px
+}
+.image-border{border:3px solid #343A40;}
+
+/* Text */
+p {
+    font-family: "Segoe UI", "Segeo", "Trebuchet MS", Verdana, "sans-serif";
+    line-height: 30px;
+    color: #090909;
+}
+header {
+    display: inline;
+}
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
+    color: #181818;
+}
+h2 {
+    font-size: 1.1em
+}
+h3 {
+    font-size: 0.9em
+}
+h4 {
+    font-size: 0.8em
+}
+h5 a {
+    font-size: 0.7em
+}
+.skills {
+    font-size: 0.7em
+}
+/* Links */
+a {
+    text-decoration: underline;
+    font-size: 0.7em;
+    font-family: 'Press Start 2P', cursive;
+}
+h1 a, ul a, .social-link {
+    color: #F8F9FA;
+    text-decoration: none;
+}
+h1 a:hover, ul a:hover, .social-link:hover {
+    text-decoration: none;
+    color: #F8F9FA;
+}
+/* Footer */
+.navbottom {
+    position: sticky;
+    bottom: 0
+}
+.footer-text {
+    color: #F8F9FA;
+}
+/* Contact form */
+li {
+    list-style-type: none;
+    text-align:center;
+    height: 45px;
+    line-height: 45px
+}
+input, select {
+    width: 56%;
+    height: 40px;
+    border-radius: 8px;
+    text-indent: 10px;
+}
+select {
+    height: 46px
+}
+textarea {
+    height: 80px;
+    line-height: 34px;
+    border-radius: 8px;
+    text-indent: 10px;
+}
+.input-style, textarea {
+    width: 57.5%
+}
+.input-left {
+    text-align: left;
+}
+.input-right {
+    text-align: right;
+}
+.no-indent {
+    width: 150px;
+    text-indent: 0;
+}
+@media (max-width:1199px) {
+    .social-link {
+        display: block
+    }
+}
+@media (max-width:991px) {
+    input, select, textarea {
+        width: 68%;
+    }
+    textarea, .input-style {
+        width: 70%;
+    }
+    .social-link {
+        display: inline;
+    }
+}
+@media (max-width:767px) {
+    input, select, textarea, .input-style {
+        width: 90%;
+    }
+    .input-left, .input-right, .social-link {
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    h4 {
+        font-size: 0.7em;
+    }
+    .skills {
+        font-size: 0.55em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+@media (max-width:575px) {
+    .skills {
+        margin: 0 24px
+    }
+}
+@media (max-width:359px) {
+    nav,ul,li{width:100%}
+}
